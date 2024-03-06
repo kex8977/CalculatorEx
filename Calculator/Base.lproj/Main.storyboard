@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="0JZ-Rg-seb">
+                                <rect key="frame" x="16" y="154" width="361" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vv-4u-9DF">
+                                <rect key="frame" x="16" y="349" width="361" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zKa-Zj-ap4"/>
+                                    <barButtonItem title="7" id="wjY-VJ-aj5">
+                                        <connections>
+                                            <action selector="btnSeven:" destination="BYZ-38-t0r" id="fWx-Ye-Kqi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7qX-sg-lp7"/>
+                                    <barButtonItem title="8" id="WWe-Ob-Vx3">
+                                        <connections>
+                                            <action selector="btnEight:" destination="BYZ-38-t0r" id="GQH-kA-kHf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ffe-s3-zS2"/>
+                                    <barButtonItem title="9" id="Opz-TJ-enQ">
+                                        <connections>
+                                            <action selector="btnNine:" destination="BYZ-38-t0r" id="GnS-KP-qmG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vn8-Tb-oy7"/>
+                                    <barButtonItem title="x" id="Ei8-zu-xGG">
+                                        <connections>
+                                            <action selector="btnMultiple:" destination="BYZ-38-t0r" id="bOd-sU-cio"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-o3-IGa">
+                                <rect key="frame" x="16" y="393" width="361" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="De5-Sx-mSL"/>
+                                    <barButtonItem title="4" id="IKj-hw-fRh">
+                                        <connections>
+                                            <action selector="btnFour:" destination="BYZ-38-t0r" id="ttI-BZ-bFA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dfB-O2-do6"/>
+                                    <barButtonItem title="5" id="L7n-RQ-8gc">
+                                        <connections>
+                                            <action selector="btnFive:" destination="BYZ-38-t0r" id="yZK-cs-x15"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cqz-SO-2bq"/>
+                                    <barButtonItem title="6" id="HgE-KO-CIo">
+                                        <connections>
+                                            <action selector="btnSix:" destination="BYZ-38-t0r" id="Ngn-9P-g1c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wqE-Ik-Qdc"/>
+                                    <barButtonItem title="-" id="EiX-C3-LmK">
+                                        <connections>
+                                            <action selector="btnSubstract:" destination="BYZ-38-t0r" id="EVl-Cx-FPj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYZ-7s-9op">
+                                <rect key="frame" x="16" y="437" width="361" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="26u-GY-ROE"/>
+                                    <barButtonItem title="1" id="jjc-NH-vyr">
+                                        <connections>
+                                            <action selector="btnOne:" destination="BYZ-38-t0r" id="qyG-RB-k1e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="k8e-we-Rn3"/>
+                                    <barButtonItem title="2" id="DUJ-A6-WUM">
+                                        <connections>
+                                            <action selector="btnTwo:" destination="BYZ-38-t0r" id="FOm-VQ-JHg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vBy-zL-bbD"/>
+                                    <barButtonItem title="3" id="bAO-8d-SMz">
+                                        <connections>
+                                            <action selector="btnThree:" destination="BYZ-38-t0r" id="EFg-pS-AFv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SUy-eB-s95"/>
+                                    <barButtonItem title="+" id="IRz-og-rgQ">
+                                        <connections>
+                                            <action selector="btnAdd:" destination="BYZ-38-t0r" id="GOX-Uz-Ib6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-vO-Ha7">
+                                <rect key="frame" x="16" y="481" width="361" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Jo8-8a-5H4"/>
+                                    <barButtonItem title="CA" id="deS-RG-bU6">
+                                        <connections>
+                                            <action selector="btnClearAll:" destination="BYZ-38-t0r" id="Pvu-BQ-Gfd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WeZ-DJ-rVD"/>
+                                    <barButtonItem title="0" id="NrB-Ew-Lna">
+                                        <connections>
+                                            <action selector="btnZero:" destination="BYZ-38-t0r" id="Rh6-6O-f5g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DuK-dD-ScA"/>
+                                    <barButtonItem title="/" id="3FD-e8-Sbm">
+                                        <connections>
+                                            <action selector="btnDivide:" destination="BYZ-38-t0r" id="J3f-cK-hBg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sj1-4V-t6b"/>
+                                    <barButtonItem title="=" id="Zgf-pE-Nc5">
+                                        <connections>
+                                            <action selector="btnEXECUTE:" destination="BYZ-38-t0r" id="xnb-gi-QBz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyj-bE-rjc">
+                                <rect key="frame" x="16" y="70" width="298" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-Q2-miC">
+                                <rect key="frame" x="322" y="99" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5T-AV-FHe">
+                                <rect key="frame" x="16" y="112" width="298" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="historyBox" destination="zyj-bE-rjc" id="X7f-qe-9YA"/>
+                        <outlet property="inputBox" destination="y5T-AV-FHe" id="yBA-vg-7TL"/>
+                        <outlet property="showOperator" destination="l0k-Q2-miC" id="hif-Is-oLd"/>
+                        <outlet property="showResult" destination="0JZ-Rg-seb" id="nX8-Wh-UsH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="5.6338028169014089"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
